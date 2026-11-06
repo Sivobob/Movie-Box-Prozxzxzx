@@ -2,7 +2,7 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'com.moviebox.stream.app',
-  appName: 'Movie Box',
+  appName: 'Movie Portal',
   webDir: 'dist',
   server: {
     androidScheme: 'https'
