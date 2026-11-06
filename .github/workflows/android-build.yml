@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: '20'
 
-            - name: Install dependencies
+      - name: Install dependencies
         run: |
           npm install --legacy-peer-deps
           npm install @capacitor/core@6 @capacitor/cli@6 @capacitor/android@6 typescript@5.9.3 --legacy-peer-deps
@@ -49,6 +49,6 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: MovieBox-APK
+          name: MoviePortal-APK
           path: android/app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
