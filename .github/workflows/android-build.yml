@@ -19,10 +19,10 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install dependencies
+            - name: Install dependencies
         run: |
           npm install --legacy-peer-deps
-          npm install @capacitor/core@6 @capacitor/cli@6 @capacitor/android@6 --legacy-peer-deps
+          npm install @capacitor/core@6 @capacitor/cli@6 @capacitor/android@6 typescript@5.9.3 --legacy-peer-deps
 
       - name: Build web app
         run: npm run build
